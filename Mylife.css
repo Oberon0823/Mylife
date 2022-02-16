@@ -1,4 +1,4 @@
-/*基礎設定*/
+/*基礎設定---------------------------------------------------------------*/
 *{
     padding: 0;     /*所有內容貼齊邊框, 以利後續排版*/
     margin: 0;
@@ -6,11 +6,12 @@
     background-color: black;
     color: white;
 }
+
 h1, h2, h3, h4, h5, h6{
     font-weight: normal;        /*標題字體粗細全部還原預設, 以利後續排版*/
 }
 
-/*標題*/
+/*標題-------------------------------------------------------------------*/
 header{
     background-color: navy;
     color: white;
@@ -23,44 +24,37 @@ header{
     h1{
         background-color: navy;
     }
-/*副標題*/
-.header01{
+/*副標題-----------------------------------------------------------------*/
+nav{
     background-color: gray;
-    display: flex;
 }
-    .HeadText01
-    {
-        font-size: 1.5rem;
-    }
-
-    nav{
-        display: flex;
-        /*background-color: gray;
-        /*color: black;*/
+    .HeadText01{
+        font-size: 1.5rem;  /*字體大小*/
     }
         nav ul{
-            
-            display: flex;     /*影響範圍只有一層(li) , 若再nav裡面宣告則無影響*/
+            display: flex;     /*子標題橫向佈局*/
+            /*影響範圍只有一層(li) , 若再nav裡面宣告則無影響*/
             padding-left: 1rem;     /*子標題位置調整(左側空間增加)*/
             list-style-type: none;  /*將li預設的標點去除*/
             background-color: gray;
+            
         }
-            nav ul li{
-                display: flex;
-                background-color: gray;
-            }
-                nav ul li a{
-                    background-color: gray;
-                    padding: 0rem 0.75rem;    /*子標題位置調整(四面空間增加)*/
-                    color: white;
-                    text-decoration: none;
-                    transition:all 0.5s ease;   /*使底下顏色變換延遲, 增添風格*/
-                }
-                nav ul li a:hover{
-                    background-color: darkgray;
-                    color: black;
-                }
-
+        nav ul li{
+            display: flex;
+            background-color: gray;
+        }
+        nav ul li a{
+            background-color: gray;
+            padding: 0rem 2rem;    /*子標題位置調整(四面空間增加)*/
+            color: white;
+            text-decoration: none;
+            transition:all 0.5s ease;   /*使底下顏色變換延遲, 增添風格*/
+        }
+        nav ul li a:hover{
+            background-color: darkgray;
+            color: black;
+        }
+/*表格-------------------------------------------------------------------*/
 table, th, td
 {
     border-collapse: collapse;              
@@ -68,5 +62,8 @@ table, th, td
 }
 td
 {
-    padding: 0.5rem; /**/
+    padding: 0.5rem;    /**/
+}
+section.left, section.right{
+    display:flex;
 }
