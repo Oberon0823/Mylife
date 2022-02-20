@@ -62,8 +62,23 @@ table, th, td
 }
 td
 {
-    padding: 0.5rem;    /**/
+    padding: 0.5rem;    
 }
-section.left, section.right{
+table
+{
+    margin: 0.5rem;
+}
+
+.Table{
     display:flex;
+    flex-wrap:wrap;
+    flex-direction:column; /* 主軸 */
+    height:650px;
+    /*border:1px solid red;*/
+    justify-content:center;
+    /* ( justify-content = 依據主軸設定表格位置 ) */
+            /* ( center / flex-start / flex-end / space-around / space-evenly ) */
+    align-content:center;
+    /* ( align-items = 依據四軸設定表格位置 ) */
+            /*可換成 ( center / flex-start / flex-end ) */
 }
