@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
 header{
     background-color: navy;
     color: white;
-    padding: 20px;
+    padding: 25px;
     width: 100%;
 }
     .HeadTitle01{
@@ -25,27 +25,24 @@ header{
         background-color: navy;
     }
 /*副標題-----------------------------------------------------------------*/
-nav{
-    background-color: gray;
-}
     .HeadText01{
         font-size: 1.5rem;  /*字體大小*/
     }
         nav ul{
-            display: flex;     /*子標題橫向佈局*/
+            display: flex;     /*子標題橫向佈局*//*影響li層*//*使各選項橫向排列*/
             /*影響範圍只有一層(li) , 若再nav裡面宣告則無影響*/
-            padding-left: 1rem;     /*子標題位置調整(左側空間增加)*/
+            padding-left: 2rem;     /*子標題位置調整(左側空間增加)*/
             list-style-type: none;  /*將li預設的標點去除*/
             background-color: gray;
             
         }
         nav ul li{
-            display: flex;
+            display: flex;      /*子標題橫向佈局*//*影響a層*//*使變色範圍滿版*/
             background-color: gray;
         }
         nav ul li a{
             background-color: gray;
-            padding: 0rem 2rem;    /*子標題位置調整(四面空間增加)*/
+            padding: 0.25rem 2.25rem;    /*子標題位置調整(四面空間增加)*/
             color: white;
             text-decoration: none;
             transition:all 0.5s ease;   /*使底下顏色變換延遲, 增添風格*/

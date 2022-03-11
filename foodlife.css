@@ -1,0 +1,21 @@
+.title01{
+    padding-left: 400px;    /*起始位置調整*/
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column; /* 內部元素橫向布局 *//*圖片+文字為一個元素*/
+    height:550px;
+    justify-content:center;
+    /* ( justify-content = 依據主軸設定表格直向位置 ) */
+            /* ( center / flex-start / flex-end / space-around / space-evenly ) */
+    align-content:flex-start;
+    /* ( align-items = 依據四軸設定表格橫向位置 ) */
+            /*可換成 ( center / flex-start / flex-end ) */
+    font-size: 2.5rem;
+}
+img{
+    margin-right:50px; /*文字與圖片間隔*/
+    vertical-align:middle; /*文字垂直置中*/
+}
+a{
+    text-decoration: none;  /*去除文字超連結底線*/
+}
